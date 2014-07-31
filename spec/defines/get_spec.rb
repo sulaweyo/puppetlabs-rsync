@@ -222,8 +222,8 @@ describe 'rsync::get', :type => :define do
 
     it {
       should contain_exec("rsync foobar").with({
-        'command' => 'rsync -q -a --compression example.com foobar',
-        'onlyif'  => "test `rsync --dry-run --itemize-changes -a --compression example.com foobar | wc -l` -gt 0"
+        'command' => 'rsync -q -a --compress example.com foobar',
+        'onlyif'  => "test `rsync --dry-run --itemize-changes -a --compress example.com foobar | wc -l` -gt 0"
        })
     }
   end
