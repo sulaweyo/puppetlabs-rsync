@@ -18,23 +18,23 @@ Manage rsync package
 get files via rsync
 
 ## Parameters: ##
-    $source      - source to copy from
-    $path        - path to copy to, defaults to $name
-    $user        - username on remote system
-    $purge       - if set, rsync will use '--delete'
-    $recursive   - if set, rsync will use '-r'
-    $links       - if set, rsync will use '--links'
-    $hardlinks   - if set, rsync will use '--hard-links'
-    $copylinks   - if set, rsync will use '--copy-links'
-    $times       - if set, rsycn will use '--times'
-    $compression - if set, rsycn will use '--compression'
-    $include     - string to be included
-    $exclude     - string to be excluded
-    $keyfile     - ssh key used to connect to remote host
-    $timeout     - timeout in seconds, defaults to 900
-    $execuser    - user to run the command (passed to exec)
-    $chown       - USER:GROUP simple username/groupname mapping
-    $onlyif      - condition to run the rsync command
+    $source     - source to copy from
+    $path       - path to copy to, defaults to $name
+    $user       - username on remote system
+    $purge      - if set, rsync will use '--delete'
+    $recursive  - if set, rsync will use '-r'
+    $links      - if set, rsync will use '--links'
+    $hardlinks  - if set, rsync will use '--hard-links'
+    $copylinks  - if set, rsync will use '--copy-links'
+    $times      - if set, rsycn will use '--times'
+    $compress   - if set, rsycn will use '--compress'
+    $include    - string to be included
+    $exclude    - string to be excluded
+    $keyfile    - ssh key used to connect to remote host
+    $timeout    - timeout in seconds, defaults to 900
+    $execuser   - user to run the command (passed to exec)
+    $chown      - USER:GROUP simple username/groupname mapping
+    $onlyif     - condition to run the rsync command
 
 ## Actions: ##
   get files via rsync
